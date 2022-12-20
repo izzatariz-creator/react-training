@@ -1,0 +1,17 @@
+img {
+    width: 200px;
+}
+
+body {
+    margin: 200px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background: #312f45;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
