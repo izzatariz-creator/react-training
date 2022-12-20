@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 1</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- The react app renders here -->
+    </div>
+    <script src="react/react.js"></script>
+    <script src="react/react-dom.js"></script>
+    <script>
+        ReactDOM.render(
+            //h1 = type, null= dom attribute
+            React.createElement(
+                'h1',
+                {
+                    id: 'my-heading',
+                },
+                // 'Hello World'
+                React.createElement('span', null, 'Hello ',
+                    React.createElement('em', null, ' Wonderful ')),
+                'World!'
+            ),
+            document.getElementById('app')
+        );
+    </script>
+</body>
+
+</html>

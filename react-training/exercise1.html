@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - Props</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- The react app renders here -->
+    </div>
+
+    <script src="react/react.js"></script>
+    <script src="react/react-dom.js"></script>
+    <script src="react/babel.js"></script>
+
+    <script type="text/babel">
+        //app code goes here
+        class MyComponent extends React.Component {
+            render() {
+                return <span><ul>
+                    <li>{this.props.item}</li>
+                </ul></span>
+            }
+        }
+
+        ReactDOM.render(
+
+            <div>
+                <h2> Grocery List </h2>
+                <MyComponent item="Bread" />
+                <MyComponent item="Eggs" />
+                <MyComponent item="Cereal" />
+                <MyComponent item="Milk" />
+                <MyComponent item="Oat" />
+            </div>,
+
+            document.getElementById('app')
+
+        );
+    </script>
+
+</body>
+
+</html>
